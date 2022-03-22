@@ -11,4 +11,4 @@ spec:
     - name: buildImage
       value: centos
   taskRef:
-     name: task-exemplo2
+     name: task-exemplo2-params

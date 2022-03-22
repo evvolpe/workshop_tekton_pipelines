@@ -177,13 +177,15 @@ spec:
     - name: build-args
       value:
         - 'ls'
-        - '- l /'
+        - '-l /'
     - name: buildImage
       value: centos
   taskRef:
      name: task-exemplo2
 ```
 Pode aplicar o `Taskrun` e acompanhar a execução do modelo declarivo e acompanhar a execução.
+
+tkn task start task-exemplo2 -p buildImage='centos' -p build-args='-c','ls -l /'
 
 Na segunda execução, vamos criar a `Taskrun` pelo CLI (tkn) e passar os seguintes valores como parâmetros.
 
